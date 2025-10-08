@@ -106,8 +106,8 @@ def draw_dashboard(df):
         st.pyplot(fig)
 
         # Summary stats
-        st.markdown("### 📈 Indicator Summary")
-        st.write(trend_df.describe())
+        #st.markdown("### 📈 Indicator Summary")
+        #st.write(trend_df.describe())
 
         # Download CSV
         csv = trend_df.to_csv(index=False).encode("utf-8")
@@ -143,5 +143,6 @@ if __name__ == "__main__":
         threading.Thread(target=open_browser, daemon=True).start()
 
     main()
+
 
 
