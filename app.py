@@ -8,10 +8,10 @@ import matplotlib.pyplot as plt
 # ==========================================================
 #  AUTO-OPEN IN BROWSER (only used for local runs)
 # ==========================================================
-#def open_browser():
-#    """Automatically open the app in the default browser (local runs only)."""
-#    time.sleep(2)
-#    webbrowser.open_new("http://localhost:8501")
+def open_browser():
+    """Automatically open the app in the default browser (local runs only)."""
+    time.sleep(2)
+    webbrowser.open_new("http://localhost:8501")
 
 
 # ==========================================================
@@ -143,4 +143,5 @@ if __name__ == "__main__":
         threading.Thread(target=open_browser, daemon=True).start()
 
     main()
+
 
